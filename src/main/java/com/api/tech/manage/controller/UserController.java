@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.api.tech.manage.dto.input.UserInputDTO;
-import com.api.tech.manage.dto.output.UserOutputDTO;
-import com.api.tech.manage.service.interfaces.IUserService;
+import com.api.tech.manage.postgredb.dto.input.UserInputDTO;
+import com.api.tech.manage.postgredb.dto.output.UserOutputDTO;
+import com.api.tech.manage.postgredb.service.interfaces.IUserService;
 
 import jakarta.validation.Valid;
 

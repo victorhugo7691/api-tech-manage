@@ -1,14 +1,14 @@
-package com.api.tech.manage.service;
+package com.api.tech.manage.postgredb.service;
 
 import org.springframework.stereotype.Service;
 
-import com.api.tech.manage.dto.input.UserInputDTO;
-import com.api.tech.manage.dto.output.UserOutputDTO;
-import com.api.tech.manage.entity.User;
 import com.api.tech.manage.exception.FalhaNaAtividadeException;
-import com.api.tech.manage.mapper.UserMapper;
-import com.api.tech.manage.repository.IUserRepository;
-import com.api.tech.manage.service.interfaces.IUserService;
+import com.api.tech.manage.postgredb.dto.input.UserInputDTO;
+import com.api.tech.manage.postgredb.dto.output.UserOutputDTO;
+import com.api.tech.manage.postgredb.entity.User;
+import com.api.tech.manage.postgredb.mapper.UserMapper;
+import com.api.tech.manage.postgredb.repository.IUserRepository;
+import com.api.tech.manage.postgredb.service.interfaces.IUserService;
 
 @Service
 public class UserService implements IUserService{

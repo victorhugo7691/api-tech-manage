@@ -1,4 +1,4 @@
-package com.api.tech.manage.dto.output;
+package com.api.tech.manage.postgredb.dto.output;
 
 import java.time.LocalDate;
 

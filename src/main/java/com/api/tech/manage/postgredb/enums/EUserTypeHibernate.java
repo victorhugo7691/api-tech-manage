@@ -1,4 +1,4 @@
-package com.api.tech.manage.enums;
+package com.api.tech.manage.postgredb.enums;
 
 import org.hibernate.engine.spi.SharedSessionContractImplementor;
 import org.hibernate.usertype.UserType;

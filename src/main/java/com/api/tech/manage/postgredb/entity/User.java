@@ -1,11 +1,11 @@
-package com.api.tech.manage.entity;
+package com.api.tech.manage.postgredb.entity;
 
 import java.time.LocalDate;
 
 import org.hibernate.annotations.Type;
 
-import com.api.tech.manage.enums.EUserType;
-import com.api.tech.manage.enums.EUserTypeHibernate;
+import com.api.tech.manage.postgredb.enums.EUserType;
+import com.api.tech.manage.postgredb.enums.EUserTypeHibernate;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

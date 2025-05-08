@@ -1,9 +1,9 @@
-package com.api.tech.manage.mapper;
+package com.api.tech.manage.postgredb.mapper;
 
-import com.api.tech.manage.dto.input.UserInputDTO;
-import com.api.tech.manage.dto.output.UserOutputDTO;
-import com.api.tech.manage.entity.User;
-import com.api.tech.manage.enums.EUserType;
+import com.api.tech.manage.postgredb.dto.input.UserInputDTO;
+import com.api.tech.manage.postgredb.dto.output.UserOutputDTO;
+import com.api.tech.manage.postgredb.entity.User;
+import com.api.tech.manage.postgredb.enums.EUserType;
 
 public class UserMapper {
 	
