@@ -34,7 +34,7 @@ public class UserControllerTest {
     }
 	
 	@Test
-    void saveUserSucesso() {
+    void saveUserSucess() {
         // Arrange
         UserInputDTO inputDTO = TestFixture.createUserInputDto();
         UserOutputDTO outputDTO = TestFixture.createUserOutputDto();

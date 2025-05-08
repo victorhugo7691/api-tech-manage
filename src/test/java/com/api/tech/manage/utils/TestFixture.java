@@ -21,4 +21,5 @@ public class TestFixture {
 		return new UserOutputDTO(1L, "Ana Silva", "ana@gmail.com", "+55 11 99999-9999", LocalDate.of(1995, 05, 05),
 				"ADMIN");
 	}
+	
 }
