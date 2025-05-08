@@ -1,6 +1,5 @@
 package com.api.tech.manage.postgredb.service;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
@@ -14,6 +13,9 @@ import com.api.tech.manage.postgredb.mapper.UserMapper;
 import com.api.tech.manage.postgredb.repository.IUserRepository;
 import com.api.tech.manage.postgredb.service.interfaces.IUserService;
 
+import jakarta.transaction.Transactional;
+
+@Transactional
 @Service
 public class UserService implements IUserService {
 
@@ -45,6 +47,13 @@ public class UserService implements IUserService {
 		}
 
 		return users.stream().map(UserMapper::toOutputDTO).toList();
+	}
+
+	@Override
+	public UserOutputDTO findUserById(Long id) {
+		User user = this.userRepository.findById(id)
+				.orElseThrow(() -> new DadosNaoEncontradosException("Usuário não cadastrado."));
+		return UserMapper.toOutputDTO(user);
 	}
 
 }

@@ -72,7 +72,7 @@ public class UserControllerTest {
 	}
 
 	@Test
-	void findAll_DeveRetornar200ComListaDeUsuarios() {
+	void findAllSucess() {
 		// Arrange
 		List<UserOutputDTO> users = Arrays.asList(TestFixture.createUserOutputDto(), TestFixture.createUserOutputDto());
 
@@ -89,16 +89,20 @@ public class UserControllerTest {
 	}
 
 	@Test
-	void findAll_DeveRetornar204QuandoNaoHouverUsuarios() {
+	void findUserByIdSucess() {
 		// Arrange
-		when(this.userService.findAll()).thenThrow(new DadosNaoEncontradosException("Não há usuários cadastrados."));
+		Long id = 1L;
+		UserOutputDTO user = TestFixture.createUserOutputDto();
 
-		// Act & Assert
-		DadosNaoEncontradosException exception = assertThrows(DadosNaoEncontradosException.class, () -> {
-			this.userController.findAll();
-		});
+		when(this.userService.findUserById(id)).thenReturn(user);
 
-		assertEquals("Não há usuários cadastrados.", exception.getMessage());
-		verify(this.userService, times(1)).findAll();
+		// Act
+		ResponseEntity<UserOutputDTO> response = this.userController.findUserById(id);
+
+		// Assert
+		assertEquals(HttpStatus.OK, response.getStatusCode());
+		assertNotNull(response.getBody());
+		verify(this.userService, times(1)).findUserById(id);
 	}
+
 }

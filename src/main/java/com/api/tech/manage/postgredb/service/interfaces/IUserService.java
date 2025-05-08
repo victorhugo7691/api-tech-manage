@@ -11,4 +11,6 @@ public interface IUserService {
 
 	public List<UserOutputDTO> findAll();
 
+	public UserOutputDTO findUserById(Long id);
+
 }
