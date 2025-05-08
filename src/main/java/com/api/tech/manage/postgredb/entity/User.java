@@ -1,8 +1,11 @@
-package com.api.tech.manage.entity;
+package com.api.tech.manage.postgredb.entity;
 
 import java.time.LocalDate;
 
-import com.api.tech.manage.enums.EUserType;
+import org.hibernate.annotations.Type;
+
+import com.api.tech.manage.postgredb.enums.EUserType;
+import com.api.tech.manage.postgredb.enums.EUserTypeHibernate;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -12,7 +15,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "user")
+@Table(name = "user", schema = "public")
 public class User {
 
 	@Id
@@ -33,6 +36,7 @@ public class User {
 	private LocalDate birthDate;
 
 	@Column(name = "user_type", nullable = false)
+	@Type(value = EUserTypeHibernate.class)
 	private EUserType userType;
 
 	public Long getId() {

@@ -1,6 +1,8 @@
-package com.api.tech.manage.dto;
+package com.api.tech.manage.postgredb.dto.input;
 
 import java.time.LocalDate;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
@@ -21,6 +23,7 @@ public class UserInputDTO {
 	private String phone;
 
 	@NotNull(message = "Informe a data de nascimento.")
+	@JsonFormat(pattern = "dd/MM/yyyy")
 	private LocalDate birthDate;
 
 	@NotBlank(message = "O tipo do usuário deve ser informado, considera-se, ADMIN, EDITOR ou VIEWER")
