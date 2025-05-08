@@ -4,6 +4,8 @@ import java.time.LocalDate;
 
 import com.api.tech.manage.postgredb.dto.input.UserInputDTO;
 import com.api.tech.manage.postgredb.dto.output.UserOutputDTO;
+import com.api.tech.manage.postgredb.entity.User;
+import com.api.tech.manage.postgredb.enums.EUserType;
 
 public class TestFixture {
 
@@ -21,5 +23,9 @@ public class TestFixture {
 		return new UserOutputDTO(1L, "Ana Silva", "ana@gmail.com", "+55 11 99999-9999", LocalDate.of(1995, 05, 05),
 				"ADMIN");
 	}
-	
+
+	public static User createUser() {
+		return new User(1L, "Ana", "ana@gmail.com", "+55 11 99999-9999", LocalDate.of(2000, 1, 1), EUserType.ADMIN);
+	}
+
 }
