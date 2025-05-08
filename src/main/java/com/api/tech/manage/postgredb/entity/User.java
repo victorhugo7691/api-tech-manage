@@ -39,6 +39,19 @@ public class User {
 	@Type(value = EUserTypeHibernate.class)
 	private EUserType userType;
 
+	public User() {
+	};
+
+	public User(Long id, String fullName, String email, String phone, LocalDate birthDate, EUserType userType) {
+		super();
+		this.id = id;
+		this.fullName = fullName;
+		this.email = email;
+		this.phone = phone;
+		this.birthDate = birthDate;
+		this.userType = userType;
+	}
+
 	public Long getId() {
 		return id;
 	}
