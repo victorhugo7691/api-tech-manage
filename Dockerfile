@@ -1,17 +1,17 @@
 # Imagem base para construção
-FROM maven:3.9.5-eclipse-temurin-17 AS builder
+FROM maven:3.9.9-eclipse-temurin-17 AS builder
 
 # Definindo o diretório de trabalho para a construção
 WORKDIR /app
 
 # Copiando o pom.xml e os arquivos de configuração do Maven
-COPY backend/pom.xml .
+COPY pom.xml .
 
 # Baixando as dependências para cache
 RUN mvn dependency:go-offline
 
 # Copiando o restante do código para o container
-COPY backend/src ./src
+COPY /src ./src
 
 # Construindo o JAR da aplicação
 RUN mvn clean package -DskipTests
