@@ -77,7 +77,6 @@ Dentro da pasta principal sugiro executar os seguintes comandos:
 
 mvn clean
 mvn install
-DB_HOST=dpg-d0daovjuibrs73f535og-a.oregon-postgres.render.com DB_NAME=db_tech_manage DB_PASSWORD=X9t4KiunzxOBAPtZ8r634jyxuWnf2bh2 DB_PORT=5432 DB_USER=app_tech_manage mvn spring-boot:run
 
 ```
 ```bash
