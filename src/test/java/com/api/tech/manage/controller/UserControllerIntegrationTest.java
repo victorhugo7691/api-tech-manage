@@ -1,15 +1,14 @@
 package com.api.tech.manage.controller;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.api.tech.manage.postgredb.dto.input.UserInputDTO;
-import com.api.tech.manage.postgredb.repository.IUserRepository;
 import com.api.tech.manage.utils.TestFixture;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -20,6 +19,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @SpringBootTest
 @AutoConfigureMockMvc
+@Transactional
 public class UserControllerIntegrationTest {
 
     @Autowired
@@ -27,14 +27,6 @@ public class UserControllerIntegrationTest {
 
     @Autowired
     private ObjectMapper objectMapper;
-
-    @Autowired
-    private IUserRepository userRepository;
-
-    @BeforeEach
-    void setup() {
-        userRepository.deleteAll();
-    }
 
    @Test
     void cadastrarEListarComSucesso() throws Exception {
@@ -54,10 +46,10 @@ public class UserControllerIntegrationTest {
     }
    
    @Test
-   void retornarNotContent() throws Exception {
+   void retornarContentOk() throws Exception {
        this.mockMvc.perform(get("/users")
                .contentType(MediaType.APPLICATION_JSON))
-               .andExpect(status().isNoContent());
+               .andExpect(status().isOk());
    }
 
 }

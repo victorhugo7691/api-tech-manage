@@ -1,5 +1,7 @@
 package com.api.tech.manage.postgredb.mapper;
 
+import java.sql.Date;
+
 import com.api.tech.manage.postgredb.dto.input.UserInputDTO;
 import com.api.tech.manage.postgredb.dto.output.UserOutputDTO;
 import com.api.tech.manage.postgredb.entity.User;
@@ -13,7 +15,7 @@ public class UserMapper {
         user.setFullName(dto.getFullName());
         user.setEmail(dto.getEmail());
         user.setPhone(dto.getPhone());
-        user.setBirthDate(dto.getBirthDate());
+        user.setBirthDate(Date.valueOf(dto.getBirthDate()));
         user.setUserType(EUserType.valueOf(dto.getUserType()));
         
         return user;
@@ -25,7 +27,7 @@ public class UserMapper {
             user.getFullName(),
             user.getEmail(),
             user.getPhone(),
-            user.getBirthDate(),
+            user.getBirthDate().toLocalDate(),
             user.getUserType().name()
         );
     }
