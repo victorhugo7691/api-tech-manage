@@ -103,23 +103,3 @@ Formato do Body JSON
 ```
 
 Este foi um projeto legal em desenvolver, que possibilita utilizar os conhecimentos de programação, banco de dados, técnicas de desenvolvimento e diversos outros conhecimentos.
-
-## Imagens que demonstram o funcionamento da api
-
-<img src="./utils/51.png">
-
-<img src="./utils/14.png">
-
-<img src="./utils/56.png">
-
-<img src="./utils/34.png">
-
-<img src="./utils/48.png">
-
-<img src="./utils/4-29.png">
-
-<img src="./utils/29.png">
-
-<img src="./utils/24.png">
-
-<img src="./utils/15.png">
