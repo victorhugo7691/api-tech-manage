@@ -3,7 +3,6 @@ package com.api.tech.manage.controller;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertNull;
-import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
@@ -19,7 +18,6 @@ import org.mockito.MockitoAnnotations;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
-import com.api.tech.manage.exception.DadosNaoEncontradosException;
 import com.api.tech.manage.postgredb.dto.input.UserInputDTO;
 import com.api.tech.manage.postgredb.dto.output.UserOutputDTO;
 import com.api.tech.manage.postgredb.service.interfaces.IUserService;
@@ -104,5 +102,52 @@ public class UserControllerTest {
 		assertNotNull(response.getBody());
 		verify(this.userService, times(1)).findUserById(id);
 	}
+	
+	@Test
+	void updateUserSucess() {
+		// Arrange
+		Long id = 1L;
+		UserInputDTO inputDTO = TestFixture.createUserInputDto();
+		UserOutputDTO outputDTO = TestFixture.createUserOutputDto();
+
+		when(this.userService.updateUser(id, inputDTO)).thenReturn(outputDTO);
+
+		// Act
+		ResponseEntity<UserOutputDTO> response = this.userController.updateUser(id, inputDTO);
+
+		// Assert
+		assertEquals(HttpStatus.OK, response.getStatusCode());
+		assertNotNull(response.getBody());
+		assertEquals("Ana Silva", response.getBody().fullName());
+	}
+	
+	@Test
+	void updateUseNoContent() {
+		// Arrange
+		Long id = 1L;
+		UserInputDTO inputDTO = TestFixture.createUserInputDto();
+
+		when(this.userService.updateUser(id, inputDTO)).thenReturn(null);
+		
+		// Act
+		ResponseEntity<UserOutputDTO> response = this.userController.updateUser(id, inputDTO);
+
+		// Assert
+		assertEquals(HttpStatus.NO_CONTENT, response.getStatusCode());
+	}
+	
+	@Test
+	void deleteUserSucess() {
+		// Arrange
+		Long id = 1L;
+		
+		// Act
+	    ResponseEntity<Void> response = this.userController.deleteUser(id);
+
+	    // Assert
+	    assertEquals(HttpStatus.NO_CONTENT, response.getStatusCode());
+		verify(this.userService, times(1)).deleteUser(id);
+	}
+
 
 }

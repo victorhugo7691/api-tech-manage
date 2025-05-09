@@ -1,5 +1,6 @@
 package com.api.tech.manage.utils;
 
+import java.sql.Date;
 import java.time.LocalDate;
 
 import com.api.tech.manage.postgredb.dto.input.UserInputDTO;
@@ -25,7 +26,7 @@ public class TestFixture {
 	}
 
 	public static User createUser() {
-		return new User(1L, "Ana", "ana@gmail.com", "+55 11 99999-9999", LocalDate.of(2000, 1, 1), EUserType.ADMIN);
+		return new User(1L, "Ana", "ana@gmail.com", "+55 11 99999-9999", Date.valueOf("2000-01-01"), EUserType.ADMIN);
 	}
 
 }

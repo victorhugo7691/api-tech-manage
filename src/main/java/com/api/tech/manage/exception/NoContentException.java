@@ -5,11 +5,11 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 
 //Exceção customizada para atender quando não existir conteúdo
 @ResponseStatus(HttpStatus.NO_CONTENT)
-public class DadosNaoEncontradosException extends RuntimeException {
+public class NoContentException extends RuntimeException {
 
 	private static final long serialVersionUID = 1L;
 
-	public DadosNaoEncontradosException(String message) {
+	public NoContentException(String message) {
 		super(message);
 	}
 }

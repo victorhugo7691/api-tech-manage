@@ -13,4 +13,8 @@ public interface IUserService {
 
 	public UserOutputDTO findUserById(Long id);
 
+	public UserOutputDTO updateUser(Long id, UserInputDTO userDto);
+
+	public void deleteUser(Long id);
+
 }

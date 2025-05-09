@@ -1,6 +1,6 @@
 package com.api.tech.manage.postgredb.entity;
 
-import java.time.LocalDate;
+import java.sql.Date;
 
 import org.hibernate.annotations.Type;
 
@@ -33,7 +33,7 @@ public class User {
 	private String phone;
 
 	@Column(name = "birth_date", nullable = false)
-	private LocalDate birthDate;
+	private Date birthDate;
 
 	@Column(name = "user_type", nullable = false)
 	@Type(value = EUserTypeHibernate.class)
@@ -42,7 +42,7 @@ public class User {
 	public User() {
 	};
 
-	public User(Long id, String fullName, String email, String phone, LocalDate birthDate, EUserType userType) {
+	public User(Long id, String fullName, String email, String phone, Date birthDate, EUserType userType) {
 		super();
 		this.id = id;
 		this.fullName = fullName;
@@ -84,11 +84,11 @@ public class User {
 		this.phone = phone;
 	}
 
-	public LocalDate getBirthDate() {
+	public Date getBirthDate() {
 		return birthDate;
 	}
 
-	public void setBirthDate(LocalDate birthDate) {
+	public void setBirthDate(Date birthDate) {
 		this.birthDate = birthDate;
 	}
 
