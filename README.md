@@ -106,20 +106,20 @@ Este foi um projeto legal em desenvolver, que possibilita utilizar os conhecimen
 
 ## Imagens que demonstram o funcionamento da api
 
-<img src="./utils/Screenshot from 2025-05-08 21-48-51.png">
+<img src="./utils/51.png">
 
-<img src="./utils/Screenshot from 2025-05-08 22-40-14.png">
+<img src="./utils/14.png">
 
-<img src="./utils/Screenshot from 2025-05-08 22-45-56.png">
+<img src="./utils/56.png">
 
-<img src="./utils/Screenshot from 2025-05-08 21-04-34.png">
+<img src="./utils/34.png">
 
-<img src="./utils/Screenshot from 2025-05-08 20-45-48.png">
+<img src="./utils/48.png">
 
-<img src="./<utils/Screenshot from 2025-05-08 20-44-29.png">
+<img src="./utils/4-29.png">
 
-<img src="./<utils/Screenshot from 2025-05-08 20-42-29.png">
+<img src="./utils/29.png">
 
-<img src="./<utils/Screenshot from 2025-05-08 20-42-24.png">
+<img src="./utils/24.png">
 
-<img src="./<utils/Screenshot from 2025-05-08 20-42-15.png">
+<img src="./utils/15.png">
