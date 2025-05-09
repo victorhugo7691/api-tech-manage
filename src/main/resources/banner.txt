@@ -1,0 +1,28 @@
+                                                                                                                                                                                                                
+TTTTTTTTTTTTTTTTTTTTTTT                                        hhhhhhh             MMMMMMMM               MMMMMMMM                                                                                              
+T:::::::::::::::::::::T                                        h:::::h             M:::::::M             M:::::::M                                                                                              
+T:::::::::::::::::::::T                                        h:::::h             M::::::::M           M::::::::M                                                                                              
+T:::::TT:::::::TT:::::T                                        h:::::h             M:::::::::M         M:::::::::M                                                                                              
+TTTTTT  T:::::T  TTTTTT    eeeeeeeeeeee        cccccccccccccccc h::::h hhhhh       M::::::::::M       M::::::::::M  aaaaaaaaaaaaa   nnnn  nnnnnnnn      aaaaaaaaaaaaa      ggggggggg   ggggg    eeeeeeeeeeee    
+        T:::::T          ee::::::::::::ee    cc:::::::::::::::c h::::hh:::::hhh    M:::::::::::M     M:::::::::::M  a::::::::::::a  n:::nn::::::::nn    a::::::::::::a    g:::::::::ggg::::g  ee::::::::::::ee  
+        T:::::T         e::::::eeeee:::::ee c:::::::::::::::::c h::::::::::::::hh  M:::::::M::::M   M::::M:::::::M  aaaaaaaaa:::::a n::::::::::::::nn   aaaaaaaaa:::::a  g:::::::::::::::::g e::::::eeeee:::::ee
+        T:::::T        e::::::e     e:::::ec:::::::cccccc:::::c h:::::::hhh::::::h M::::::M M::::M M::::M M::::::M           a::::a nn:::::::::::::::n           a::::a g::::::ggggg::::::gge::::::e     e:::::e
+        T:::::T        e:::::::eeeee::::::ec::::::c     ccccccc h::::::h   h::::::hM::::::M  M::::M::::M  M::::::M    aaaaaaa:::::a   n:::::nnnn:::::n    aaaaaaa:::::a g:::::g     g:::::g e:::::::eeeee::::::e
+        T:::::T        e:::::::::::::::::e c:::::c              h:::::h     h:::::hM::::::M   M:::::::M   M::::::M  aa::::::::::::a   n::::n    n::::n  aa::::::::::::a g:::::g     g:::::g e:::::::::::::::::e 
+        T:::::T        e::::::eeeeeeeeeee  c:::::c              h:::::h     h:::::hM::::::M    M:::::M    M::::::M a::::aaaa::::::a   n::::n    n::::n a::::aaaa::::::a g:::::g     g:::::g e::::::eeeeeeeeeee  
+        T:::::T        e:::::::e           c::::::c     ccccccc h:::::h     h:::::hM::::::M     MMMMM     M::::::Ma::::a    a:::::a   n::::n    n::::na::::a    a:::::a g::::::g    g:::::g e:::::::e           
+      TT:::::::TT      e::::::::e          c:::::::cccccc:::::c h:::::h     h:::::hM::::::M               M::::::Ma::::a    a:::::a   n::::n    n::::na::::a    a:::::a g:::::::ggggg:::::g e::::::::e          
+      T:::::::::T       e::::::::eeeeeeee   c:::::::::::::::::c h:::::h     h:::::hM::::::M               M::::::Ma:::::aaaa::::::a   n::::n    n::::na:::::aaaa::::::a  g::::::::::::::::g  e::::::::eeeeeeee  
+      T:::::::::T        ee:::::::::::::e    cc:::::::::::::::c h:::::h     h:::::hM::::::M               M::::::M a::::::::::aa:::a  n::::n    n::::n a::::::::::aa:::a  gg::::::::::::::g   ee:::::::::::::e  
+      TTTTTTTTTTT          eeeeeeeeeeeeee      cccccccccccccccc hhhhhhh     hhhhhhhMMMMMMMM               MMMMMMMM  aaaaaaaaaa  aaaa  nnnnnn    nnnnnn  aaaaaaaaaa  aaaa    gggggggg::::::g     eeeeeeeeeeeeee  
+                                                                                                                                                                                    g:::::g                     
+                                                                                                                                                                        gggggg      g:::::g                     
+                                                                                                                                                                        g:::::gg   gg:::::g                     
+                                                                                                                                                                         g::::::ggg:::::::g                     
+                                                                                                                                                                          gg:::::::::::::g                      
+                                                                                                                                                                            ggg::::::ggg                        
+                                                                                                                                                                               gggggg                           
+Desenvolvido por: Victor Hugo Brito da Silva Miranda
+Engenheiro de Computação
+Especializando em Inteligência Artificial Aplicada
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
